@@ -28,12 +28,17 @@
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                     data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars fs-1"></i>
                 </button>
 
                 <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                <a class="navbar-brand mt-2 mt-lg-0 d-none d-lg-block" href="/">
                     <img src="./public/images/logo.jpg" height="150" width="150" />
+                </a>
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0 d-block d-lg-none" href="/">
+                    <img src="./public/images/logo.jpg" height="50" width="50" />
                 </a>
 
                 <!-- Collapsible wrapper -->
@@ -42,7 +47,7 @@
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                            <a class="nav-link d-none d-lg-block" href="#nosotros">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#trabajos">TRABAJOS</a>
@@ -60,7 +65,7 @@
 
                 <div class="d-flex align-items-center navbar-nav me-auto mb-2 mb-lg-0 fs-3">
                     <!-- Icon -->
-                    <a class="nav-link"
+                    <a class="nav-link d-none d-lg-block"
                         href="https://wa.me/541134094092?text=Hola!%20Me%20gustaría%20consultarte%20sobre%20un%20servicio%20de%20KNC%20Luxury%20Cars"
                         target="_blank">
                         <img src="./public/images/WhatsApp.png" height="75" width="75">
@@ -81,7 +86,7 @@
         <div class="p-5 bg-image" style="background-image: url('./public/images/banner.jpg'); height: 350px;">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0);">
                 <div class="d-flex justify-content-left">
-                    <div class="text-white m-5">
+                    <div class="text-white m-5 d-none d-lg-block">
                         <h1 class="display-5"><img src="./public/images/check.png" height="30" class="m-2">Mas de 5 años de
                             experiencia.</h1>
                         <h1 class="display-5"><img src="./public/images/check.png" height="30" class="m-2">Presupuestos sin
@@ -98,7 +103,7 @@
 
     <main>
         <div class="container">
-            <div class="col-md-12 p-5" style="border-bottom: 2px #5e6163 solid;">
+            <div class="col-md-12 p-5 d-none d-lg-block" style="border-bottom: 2px #5e6163 solid;">
                 <div class="row">
                     <h1 class="display-4 text-center" id="nosotros">NOSOTROS</h1>
                 </div>
@@ -165,6 +170,15 @@
         <div class="col-md-12 text-center pt-5">
             <div class="row pb-5">
                 <h1 class="display-4" id="contacto">CONTACTO</h1>
+            </div>
+            <div class="row pb-5 d-block d-lg-none">
+                <a class="nav-link"
+                href="https://wa.me/541134094092?text=Hola!%20Me%20gustaría%20consultarte%20sobre%20un%20servicio%20de%20KNC%20Luxury%20Cars"
+                target="_blank">
+                <img src="./public/images/WhatsApp.png" height="75" width="75">
+                11 3409-4092
+            </a>
+
             </div>
             <div class="row">
                 <div class="col-12">
